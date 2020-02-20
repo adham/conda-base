@@ -12,6 +12,7 @@ RUN apt-get update \
     && apt-get upgrade -yq \
     && apt-get install -yq --no-install-recommends \
         wget \
+        git \
         ca-certificates \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
